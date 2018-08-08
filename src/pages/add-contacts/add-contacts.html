@@ -15,6 +15,34 @@
 
 
 <ion-content padding>
-<h1> Hello </h1>
+  <ion-item>
+    <ion-label stacked> Enter Your First Name: </ion-label>
+    <ion-input [(ngModel)] ="contact.fName" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked> Enter Your Last Name: </ion-label>
+    <ion-input [(ngModel)] ="contact.lName" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked> Phone Number: </ion-label>
+    <ion-input [(ngModel)] ="contact.pNumber" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked> Address: </ion-label>
+    <ion-input [(ngModel)] ="contact.address" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked> Location </ion-label>
+    <ion-input [(ngModel)] ="contact.location" ></ion-input>
+  </ion-item>
+  <button ion-button full (click)="addContact()"> Add Contact Info</button>
+
+  <ion-list>
+    <ion-item *ngFor="let contact of contacts"> </ion-item>
+    <h3>{{ contact.fName }}</h3>
+    <h3>{{ contact.lName }}</h3>
+    <p> {{contact.pNumber}} {{contact.address}} {{contact.location}} </p>
+
+  </ion-list>
 </ion-content>
 
