@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS contacts(id INTEGER PRIMARY KEY AUTOINCREMENT,fname TEXT,lname TEXT,pNumber TEXT,address TEXT, location TEXT);
+INSERT INTO contact(fname, lname, pNumber, address, location) VALUES ('Simon', 'Says', '(597)7895-5679', '123 street', 'USA' );
+INSERT INTO contact(fname, lname, pNumber, address, location) VALUES ('Jorge', 'Cruz', '(956)794-2036', '7th Road', 'England' );
+INSERT INTO contact(fname, lname, pNumber, address, location) VALUES ('Max', 'Hubert', '(326)3659-8403', 'Happy Boulevard', 'South America' );
