@@ -12,7 +12,7 @@ export class ContactsPage {
   contacts = [];
   contact = {};
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private databaseprovider: DatabaseProvider, private platform: Platform) {
     this.databaseprovider.getDatabaseState().subscribe(rdy =>{
       if (rdy) {
         this.loadContactData();
