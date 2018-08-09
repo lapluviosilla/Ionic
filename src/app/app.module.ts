@@ -4,7 +4,6 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { ContactsPage } from '../pages/contacts/contacts';
 import { AddContactsPage} from '../pages/add-contacts/add-contacts';
 import { EditContactsPage} from '../pages/edit-contacts/edit-contacts';
@@ -23,7 +22,6 @@ import { SQLite } from '@ionic-native/sqlite';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,
     ContactsPage,
     AddContactsPage,
     EditContactsPage
@@ -38,7 +36,6 @@ import { SQLite } from '@ionic-native/sqlite';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,
     ContactsPage,
     AddContactsPage,
     EditContactsPage
