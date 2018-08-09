@@ -11,6 +11,11 @@
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item *ngFor="let contact of contacts"> </ion-item>
+    <h3>{{ contact.fName }}</h3>
+    <h3>{{ contact.lName }}</h3>
+    <p> {{contact.pNumber}} {{contact.address}} {{contact.location}} </p>
+  </ion-list>
 </ion-content>
 
