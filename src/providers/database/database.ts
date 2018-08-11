@@ -35,7 +35,7 @@ export class DatabaseProvider {
   }
 
   fillDatabase(){
-    this.http.get('src/assets/dummyDump')
+    this.http.get('www/assets/dummyDump')
       .map(res => res.text())
       .subscribe(sql => {
         this.sqlitePorter.importSqlToDb(this.database, sql)
